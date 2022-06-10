@@ -1,7 +1,9 @@
 ATUALIZAR VPS
+
 sudo apt -y update && apt -y upgrade 
 
 Atualizar a Hora do servidor 
+
 dpkg-reconfigure tzdata 
 
 FAZENDO DOWNLOAD DO INSTALADOR & INICIANDO A PRIMEIRA INSTALAÇÃO (USAR SOMENTE PARA PRIMEIRA INSTALAÇÃO):
