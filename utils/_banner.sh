@@ -28,8 +28,9 @@ print_banner() {
   printf "                 ████████     ████     ████████      ███     ████████   ████████   \n";
   printf "                       ██      ██            ██   ███        ██    ██   ██          \n";
   printf "                 ████████      ██      ████████   ████████   ██    ██   ██           \n";
-  printf "                               SYSZAP - SISTEMA DE MULTIATENDIMENTO                    \n";
-  printf "                                        www.syszap.com.br                             \n";
+  printf "                                                                                     \n";
+  printf "                               SYSZAP - SISTEMA DE MULTIATENDIMENTO                  \n";
+  printf "                                        www.syszap.com.br                            \n";
   printf "\n"
  
   printf "${NC}";
