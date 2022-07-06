@@ -10,7 +10,7 @@ FAZENDO DOWNLOAD DO INSTALADOR & INICIANDO A PRIMEIRA INSTALAÇÃO (USAR SOMENTE
 
 
 ```bash
-sudo apt install -y git && git clone https://github.com/pgdigital/super-install.git && sudo chmod -R 777 ./syszapinstall && cd ./super-install && sudo ./install_primaria
+sudo apt install -y git && git clone https://github.com/pgdigital/super-install.git && sudo chmod -R 777 ./super-install && cd ./super-install && sudo ./install_primaria
 ```
 
 
