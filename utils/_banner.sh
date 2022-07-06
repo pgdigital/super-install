@@ -22,15 +22,15 @@ print_banner() {
 
   printf "\n\n"
 
-  printf "${BLUE}";
-  printf "                 ████████   ██    ██   ████████   ████████   ████████   ████████   \n";
-  printf "                 ██          ██  ██    ██              ███   ██    ██   ██    ██   \n";
-  printf "                 ████████     ████     ████████      ███     ████████   ████████   \n";
-  printf "                       ██      ██            ██   ███        ██    ██   ██          \n";
-  printf "                 ████████      ██      ████████   ████████   ██    ██   ██           \n";
-  printf "                                                                                     \n";
-  printf "                               SYSZAP - SISTEMA DE MULTIATENDIMENTO                  \n";
-  printf "                                        www.syszap.com.br                            \n";
+  printf "${GREENN}";
+  printf "                 ████████   ██    ██   ████████   ████████   ████████   ████████    ████████   ████████                 \n";
+  printf "                 ██         ██    ██   ██    ██   ██         ███   ██        ██     ██    ██   ██    ██           \n";
+  printf "                 ████████   ██    ██   ████████   ██████     ███ ██         ██      ████████   ████████               \n";
+  printf "                       ██   ██    ██   ██         ██         ███   ██     ██        ██    ██   ██               \n";
+  printf "                 ████████   ████████   ██         ████████   ███   ██   █████████   ██    ██   ██                 \n";
+  printf "                                                                                                       \n";
+  printf "                               SUPERZAPI - SISTEMA DE MULTIATENDIMENTO                                \n";
+  printf "                                        www.superzapi.com                                        \n";
   printf "\n"
  
   printf "${NC}";
