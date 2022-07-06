@@ -15,8 +15,8 @@ system_create_user() {
   sleep 2
 
   sudo su - root <<EOF
-  useradd -m -p $(openssl passwd -crypt ${mysql_root_password}) -s /bin/bash -G sudo syszap
-  usermod -aG sudo syszap
+  useradd -m -p $(openssl passwd -crypt ${mysql_root_password}) -s /bin/bash -G sudo superzapi
+  usermod -aG sudo superzapi
 EOF
 
   sleep 2
@@ -29,14 +29,14 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do código SysZap...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Fazendo download do código SUPERZAPI...${GRAY_LIGHT}"
   printf "\n\n"
 
 
   sleep 2
 
-  sudo su - syszap <<EOF
-  git clone ${link_git}  /home/syszap/${instancia_add}/
+  sudo su - superzapi <<EOF
+  git clone ${link_git}  /home/superzapi/${instancia_add}/
 EOF
 
   sleep 2
@@ -49,7 +49,7 @@ EOF
 #######################################
 system_update() {
   print_banner
-  printf "${WHITE} 💻 Vamos atualizar o sistema SysZap...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos atualizar o sistema SUPERZAPI...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -197,8 +197,8 @@ system_pm2_install() {
 
   sudo su - root <<EOF
   npm install -g pm2
-  pm2 startup ubuntu -u syszap
-  env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u syszap --hp /home/syszap/${instancia_add}
+  pm2 startup ubuntu -u superzapi
+  env PATH=\$PATH:/usr/bin pm2 startup ubuntu -u superzapi --hp /home/superzapi/${instancia_add}
 EOF
 
   sleep 2
@@ -299,7 +299,7 @@ system_nginx_conf() {
 
 sudo su - root << EOF
 
-cat > /etc/nginx/conf.d/syszap.conf << 'END'
+cat > /etc/nginx/conf.d/superzapi.conf << 'END'
 client_max_body_size 100M;
 END
 
